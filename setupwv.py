@@ -17,7 +17,7 @@ import re
 from setuptools import setup
 
 # File and directory structure
-os.system('sh setuppwvb')
+#os.system('sh setuppwvb')
 
 # Some explaining
 explainPasswd = ' It\'s your own responsibility to choose a strong password.\n \
