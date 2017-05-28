@@ -2,12 +2,11 @@ pwv
 
 A password vault using gpg and mysql
 
-First run:
+Run:
 
 pip install python-gnupg
-pip install MySQL-python
 
-then
+pip install MySQL-python
 
 setupPasswordVault.sh
 
