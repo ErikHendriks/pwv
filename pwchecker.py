@@ -14,7 +14,7 @@ def CheckPassword(password):
         score = score + 1
     if len(password) >=25:
         score = score + 1
-    
+
     if re.search('\d+',password):
         score = score + 1
     if re.search('[a-z]',password) and re.search('[A-Z]',password):
@@ -23,10 +23,8 @@ def CheckPassword(password):
         score = score + 1
 
     return strength[score]
-    
+
 def main():
-	
-		
 	mpasswd = raw_input("Check: ")
         print CheckPassword(mpasswd)
 
