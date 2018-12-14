@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Remove
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('remove') }}" method="post">
+    <fieldset>
+      <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="passwd" placeholder="Your Password" type="password"/>
+        <button class="btn btn-default" type="submit">Remove</button>
+      </div>
+    <table class="table table-striped" style="width:100%">
+      <tr>
+        <th style="width:25px;">Select</th>
+        <th>Login</th>
+        <th>Comment</th>
+      </tr>
+    {% for info in infos %}
+      <tr>
+        <td><input type="radio" name="id" value="{{ info.id }}"/></td>
+        <td>{{ info.login }}</td> 
+        <td>{{ info.key }}</td>
+        <td></td>
+      </tr>
+    {% endfor %}
+    </table>
+    </fieldset>
+    </form>
+    
+{% endblock %}

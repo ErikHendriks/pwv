@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Decrypt
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped" style="width:100%">
+      <tr>
+        <th>Login</th>
+        <th>Password</th>
+        <th>Comment</th>
+      </tr>
+    
+      <tr>
+        <td>{{ login }}</td>
+        <td>{{ password }}</td> 
+        <td>{{ comment }}</td>
+      </tr>
+   
+    </table>
+{% endblock %}
