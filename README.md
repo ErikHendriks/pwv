@@ -8,6 +8,3 @@ pip install python-gnupg
 
 pip install MySQL-python
 
-setupPasswordVault.sh
-
-for install.
