@@ -1,13 +1,1 @@
-pwv
-
-A password vault using gpg and mysql
-
-Run:
-
-pip install python-gnupg
-
-pip install MySQL-python
-
-setupPasswordVault.sh
-
-for install.
+Online password vault, multiple user. Writen in Python3, flask and sqlite3
